@@ -1,0 +1,49 @@
+package Hacker;
+
+ 
+	import java.io.*;
+	import java.math.*;
+	import java.security.*;
+	import java.text.*;
+	import java.util.*;
+	import java.util.concurrent.*;
+	import java.util.regex.*;
+	
+	public class thefirst {
+	
+	    public static void main(String[] args) {
+	        Scanner in = new Scanner(System.in);
+	        System.out.println("Hello to our calculater");
+	        System.out.println("In case you want to do the Multipication please tape 1 ");
+	        System.out.println("In case you want to do the Devicion please tape 2 ");
+	        System.out.println("In case you want to do the Addition please tape 3 ");
+	        System.out.println("In case you want to do the Subtraction please tape 4");
+	        int A=in.nextInt();
+	        int y = in.nextInt();
+            int x=in.nextInt();
+         
+ 
+	   if( A==1) {
+
+	  System.out.printf("%d x %d = %d%n", y, x, y*x);
+	        }
+	   if( A==2) {
+
+			  System.out.printf("%d / %d = %d%n", y, x, y/x);
+			        }
+	   if( A==3) {
+
+			  System.out.printf("%d + %d = %d%n", y, x, y+x);
+			        }
+			    
+	   if( A==4) {
+
+			  System.out.printf("%d - %d = %d%n", y, x, y-x);
+			        }
+			    
+	}
+	}
+	
+
+
+
