@@ -1,0 +1,61 @@
+package calculater;
+import java.util.Scanner;
+public class materis{
+	public static void main(String[] args) {
+   Scanner in = new Scanner(System.in);
+int [][] asma ={{5,3,4},{7,8,9},{10,11,2}};
+int [][] dadi ={{3,3,7},{8,8,7},{13,71,2}};
+int operation=in.nextInt();
+int a=asma[0][0]+dadi[0][0];
+int b=asma[0][1]+dadi[0][1];
+int c=asma[0][2]+dadi[0][2];
+int d=asma[1][0]+dadi[1][0];
+int e=asma[1][1]+dadi[1][1];
+int f=asma[1][2]+dadi[1][2];
+int g=asma[2][0]+dadi[2][0];
+int h=asma[2][0]+dadi[2][1];
+int i=asma[2][0]+dadi[2][2];
+
+int A=asma[0][0]-dadi[0][0];
+int B=asma[0][1]-dadi[0][1];
+int C=asma[0][2]-dadi[0][2];
+int D=asma[1][0]-dadi[1][0];
+int E=asma[1][1]-dadi[1][1];
+int F=asma[1][2]-dadi[1][2];
+int G=asma[2][0]-dadi[2][0];
+int H=asma[2][0]-dadi[2][1];
+int I=asma[2][0]-dadi[2][2];
+
+if( operation==1) {
+
+if((asma.length=dadi.length)&&(asma.length[0]==asma.length[1]==asma.length[2]=dadi.length[0]==dadi.length[1]=asma.length[1]=dadi.length[2]))
+
+{
+	System.out.println(a,b,c);
+	System.out.println(d,e,f);
+	System.out.println(g,h,i);
+}
+else
+{
+	System.out.println("we can not do it");	
+}
+
+}
+if( operation==2) {
+	if((asma.length=dadi.length)&&(asma.length[0]=asma.length[1]=asma.length[2]=dadi.length[0]=dadi.length[1]=asma.length[1]=dadi.length[2]))
+
+	{
+		System.out.println(A,B,C);
+		System.out.println(D,E,F);
+		System.out.println(G,H,I);
+	}
+	else
+	{
+		System.out.println("we can not do it");	
+	}	
+}
+	
+}
+}
+
+ 
