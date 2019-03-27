@@ -1,0 +1,45 @@
+package com.asma;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+	    System.out.println("If you want to spand extra money tape 1,if not -1 ,does not mater 0");
+        double a = in.nextDouble();
+        System.out.println("If you want to change the routine tape 1,if not -1 ,does not mater 0");
+        double b = in.nextDouble();
+
+        System.out.println("If you want to descover newthing tape 1,if not -1 ,does not mater 0");
+        double c = in.nextDouble();
+
+        System.out.println("the result is ");
+
+        double sum=a+b+c;
+        if (sum<0){
+            System.out.println("we stay home");
+        }
+        else{
+            System.out.println("we go to the hotel");
+            System.out.println("if you want to spand arround 100000DA tape1,the half -1,does not mater0");
+            double e = in.nextDouble();
+            System.out.println("If you want to do not want to swim tape 1,if not -1 ,does not mater 0");
+            double f = in.nextDouble();
+
+            System.out.println("If you want to stay on the beatch  tape 1,if not -1 ,does not mater 0");
+            double g = in.nextDouble();
+
+            System.out.println("If you want to goout from the hotel  tape 1,if not -1 ,does not mater 0");
+            double h = in.nextDouble();
+           double A=e+f+g+h;
+            if (A>0){
+                System.out.println("go to AZ hotel mostaganem");
+            }
+            else{
+                System.out.println("go to zaim hamammam el oued");
+           
+            }
+        }
+    }
+}
