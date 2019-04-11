@@ -1,0 +1,53 @@
+import java.util.Arrays;
+import java.util.Scanner;
+
+class xxxx {
+    public static void main(String args[]) {
+        int m, n, i, j;
+        Scanner in = new Scanner(System.in);
+
+        System.out.println("Enter the number of rows and columns of matrix");
+        m = in.nextInt();
+        n = in.nextInt();
+
+        int first[][] = new int[m][n];
+
+        System.out.println("Enter the elements of first matrix");
+
+        for (i = 0; i < m; i++)
+            for (j = 0; j < n; j++)
+                first[i][j] = in.nextInt();
+
+
+
+        for (i = 0; i < m; i++) {
+            for (j = 0; j < n; j++)
+                System.out.print(first[i][j] + "\t");
+
+            System.out.println();
+        }
+      
+
+        for( i=0 ; i<first.length;i++)
+        {
+            for( j=0 ; j<first.length;j++)
+            {
+                System.out.print(first[i][j]+",");
+            }
+            System.out.println();
+
+        }
+        System.out.println("***************************");
+
+        for( i=first.length-1 ; i>=0;i--)
+        {
+            for( j=first.length-1 ; j>=0;j--)
+            {
+                System.out.print(first[i][j]+",");
+            }
+            System.out.println();
+
+        }
+    }
+}
+
