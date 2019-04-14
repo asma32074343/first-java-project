@@ -1,0 +1,45 @@
+package dadi;
+import java.util.Random;
+import java.util.Scanner;
+public class Main {
+
+
+    public static void main(String args[]) {
+        Scanner in = new Scanner(System.in);
+        Random rand = new Random();
+
+        int x = rand.nextInt(20);
+        System.out.print(x);
+        int i;
+        int y;
+        do {
+            i = in.nextInt();
+
+            if (i > x) {
+                System.out.print("it is too hight" + "\n");
+            } if (x>i) {
+                System.out.print("it is too low" + "\n");
+            }
+             y = rand.nextInt(20);
+            System.out.print("The Computer guess was" +y+ "and it was"+ "\n");
+            if (y > x) {
+                System.out.print(" too hight" + "\n");
+            } if (y < x) {
+                System.out.print("  too low" + "\n");
+            }
+        }
+            while ((i != x)||(x != y) );
+
+
+            if (x == i) {
+
+                System.out.print("you won");
+            }
+        if (y == i) {
+
+            System.out.print("Computer won");
+        }
+
+    }
+}
+
