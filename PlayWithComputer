@@ -7,23 +7,27 @@ public class Main {
     public static void main(String args[]) {
         Scanner in = new Scanner(System.in);
         Random rand = new Random();
-        
-        int x = rand.nextInt (10);
+
+        int x = rand.nextInt(20);
         int i;
         do {
             i = in.nextInt();
+         
             if (i > x) {
                 System.out.print("it is too hight");
-            } else {
-                System.out.print("it is too low");
+            } if (x>i) {
+                System.out.print("it is too low" + "\n");
             }
         }
             while (i != x) ;
 
 
-            if (x==i)
-            {
+            if (x == i) {
+
                 System.out.print("you won");
             }
 
-    }}
+
+    }
+}
+
